@@ -13,8 +13,7 @@
     "eslint:recommended",
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended",
-    "plugin:prettier-recommended"
+    "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -22,7 +21,10 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "plugins": [
+    "@typescript-eslint",
+    "react"
+  ],
   "rules": {
     "quotes": [
       "error",
@@ -38,9 +40,19 @@
         "avoidEscape": true
       }
     ],
-    "react/jsx-uses-react": ["off"],
-    "react/react-in-jsx-scope": ["off"],
-    "react/jsx-props-no-spreading": ["off"],
-    "no-shadow": "off"
+    "react/jsx-uses-react": [
+      "off"
+    ],
+    "react/react-in-jsx-scope": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
+    "no-shadow": "off",
+    "linebreak-style": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ]
   }
 }

@@ -1,7 +1,4 @@
-interface IHomeProps {
-  title: string;
-}
-function Home({ title }: IHomeProps) {
+function Home() {
   return <div>Home</div>;
 }
 
