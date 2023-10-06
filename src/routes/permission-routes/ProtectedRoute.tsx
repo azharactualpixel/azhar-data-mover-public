@@ -1,5 +1,5 @@
-import ROUTES from "constants/routes";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
+import ROUTES from "src/constants/routes";
 
 export default function ProtectedRoute() {
   const isLoggedIn = true;

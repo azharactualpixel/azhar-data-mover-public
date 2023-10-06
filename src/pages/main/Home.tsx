@@ -1,5 +1,5 @@
-import { useAppDispatch, useAppSelector } from "hooks/redux/reduxHooks";
-import { increment } from "redux/user/userSlice";
+import { useAppDispatch, useAppSelector } from "src/hooks/redux/reduxHooks";
+import { increment } from "src/redux/user/userSlice";
 
 function Home() {
   const counter = useAppSelector((state) => state.counter);

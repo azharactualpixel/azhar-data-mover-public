@@ -17,18 +17,10 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "src/*": ["./src/*", "./src"],
-      "components/*": ["./src/components/*"],
-      "constants/*": ["src/constants/*"],
-      "hooks/*": ["./src/hooks/*"],
-      "layouts/*": ["src/layouts/*"],
-      "pages/*": ["src/pages/*"],
-      "providers/*": ["./src/providers/*"],
-      "redux/*": ["src/redux/*"],
-      "routes/*": ["src/routes/*"]
+      "src/*": ["./src/*", "./src"]
     }
   },
-  // "exclude": ["node_modules"],
+  "exclude": ["node_modules"],
   "include": ["src/**/*"],
   "files": ["./node_modules/redux-persist/types/integration/react.d.ts"]
 }

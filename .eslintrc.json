@@ -5,54 +5,33 @@
     "jest": true
   },
   "extends": [
-    "react-app",
-    "react-app/jest",
-    "prettier",
-    "airbnb",
-    "airbnb-typescript",
     "eslint:recommended",
-    "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
+    "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react"],
+  "settings": {
+    "import/resolvers": {
+      "typescript": {}
+    },
+    "react": {
+      "version": "detect" // You can also specify an exact version like "17.0.2"
+    }
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
-    "quotes": [
-      "error",
-      "double",
-      {
-        "avoidEscape": true
-      }
-    ],
-    "@typescript-eslint/quotes": [
-      "error",
-      "double",
-      {
-        "avoidEscape": true
-      }
-    ],
-    "react/jsx-uses-react": ["off"],
-    "react/react-in-jsx-scope": ["off"],
-    "react/jsx-props-no-spreading": ["off"],
-    "no-shadow": "off",
-    "linebreak-style": 0,
-    "@typescript-eslint/no-unused-vars": ["error"],
-    "curly": ["error"],
+    "react/react-in-jsx-scope": "off",
     "react/function-component-definition": ["error"],
-    "no-param-reassign": ["error", { "props": false }],
-    "import/prefer-default-export": "off",
-    "@typescript-eslint/no-var-requires": "off"
-    // "no-restricted-imports": [
-    //   "error",
-    //   {
-    //     "patterns": ["./*"]
-    //   }
-    // ]
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["../*", "./*"]
+      }
+    ]
   }
 }

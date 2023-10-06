@@ -1,8 +1,8 @@
-import ROUTES from "constants/routes";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import * as AuthLoadable from "routes/load-routes/AuthRoutes";
-import * as OtherLoadable from "routes/load-routes/OtherRoutes";
-import ProtectedRoute from "routes/permission-routes/ProtectedRoute";
+import ROUTES from "src/constants/routes";
+import * as AuthLoadable from "src/routes/load-routes/AuthRoutes";
+import * as OtherLoadable from "src/routes/load-routes/OtherRoutes";
+import ProtectedRoute from "src/routes/permission-routes/ProtectedRoute";
 
 function MainRoutes() {
   return (
