@@ -15,7 +15,20 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*", "./src"],
+      "components/*": ["./src/components/*"],
+      "constants/*": ["src/constants/*"],
+      "hooks/*": ["./src/hooks/*"],
+      "layouts/*": ["src/layouts/*"],
+      "pages/*": ["src/pages/*"],
+      "providers/*": ["./src/providers/*"],
+      "redux/*": ["src/redux/*"],
+      "routes/*": ["src/routes/*"]
+    }
   },
-  "include": ["src"]
+  // "exclude": ["node_modules"],
+  "include": ["src/**/*"],
+  "files": ["./node_modules/redux-persist/types/integration/react.d.ts"]
 }

@@ -1,11 +1,11 @@
-import "./App.css";
-import Home from "./pages/Home";
+import ReduxProvider from "providers/ReduxProvider";
+import MainRoutes from "routes/routes";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <ReduxProvider>
+      <MainRoutes />
+    </ReduxProvider>
   );
 }
 
